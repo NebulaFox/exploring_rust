@@ -2,6 +2,22 @@
 
 Collection of challenges faced while programming in Rust
 
+The intention of this collection is to focus on someone who
+is new to Rust but not new to programming.
+Languages such as Kotlin and Swift,
+have cultivated a certain mindset,
+which is _challenged_ in Rust,
+mostly in the form of Rust`s ownership system.
+
+It is assumed, the reader has read [Rust Programming Language Book](https://doc.rust-lang.org/book/)
+
+#### Resources
+
+ * [Rust Programming Language Book](https://doc.rust-lang.org/book/)
+ * [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
+ * [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/intro.html)
+
+
 ## Challenge 1: Lazy Loading
 
 ### Problem
