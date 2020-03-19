@@ -67,7 +67,7 @@ for `Vec` and `HashSet`.
 And go even further, by adapting the function
 to work for both `Vec` and `HastSet`
 
-([Read More](challenge-contains))
+([Read More][challenge-contains])
 
 
 _Page Last Updated: 2020-03-19_
