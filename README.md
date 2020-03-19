@@ -73,5 +73,5 @@ to work for both `Vec` and `HastSet`
 _Page Last Updated: 2020-03-19_
 
 
-[challenge-lazy-loading]: ./pages/Challenge-Lazy_Loading.html
-[challenge-contains]: ./pages/Challenge-Contains.html
+[challenge-lazy-loading]: ./pages/Challenge-Lazy_Loading.md
+[challenge-contains]: ./pages/Challenge-Contains.md
