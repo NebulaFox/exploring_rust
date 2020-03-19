@@ -319,3 +319,5 @@ fn test_contains_vec() {
 * [StackOverflow: Why does a &str not coerce to a &String when using Vec::contains?](https://stackoverflow.com/questions/48985924/why-does-a-str-not-coerce-to-a-string-when-using-veccontains)
 * [StackOverflow: Difference between iter() and into_iter() on a shared, borrowed Vec?](https://stackoverflow.com/questions/32234954/difference-between-iter-and-into-iter-on-a-shared-borrowed-vec)
 * [StackOverflow: What is the difference between iter and into_iter?](https://stackoverflow.com/questions/34733811/what-is-the-difference-between-iter-and-into-iter)
+
+_Page Last Updated: 2020-03-19_
