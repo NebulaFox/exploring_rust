@@ -93,6 +93,6 @@ _Page Last Updated: 2020-03-20_
 [challenge-lazy-loading]: ./pages/Challenge-Lazy_Loading.md
 [challenge-contains]: ./pages/Challenge-Contains.md
 [demonstrate-coercing-types]: ./pages/Demonstrate-Coercing_Types.md
-[demonstrate-coercing-string]: ./pages/Demonstrate-Coercing_Type/Demonstrate-Coercing_string.md
-[demonstrate-coercing-struct]: ./pages/Demonstrate-Coercing_Type/Demonstrate-Coercing_struct.md
-[demonstrate-coercing-wrapped-string]: ./pages/Demonstrate-Coercing_Type/Demonstrate-Coercing_wrapped_string.md
+[demonstrate-coercing-string]: ./pages/Demonstrate-Coercing_Types/Demonstrate-Coercing_string.md
+[demonstrate-coercing-struct]: ./pages/Demonstrate-Coercing_Types/Demonstrate-Coercing_struct.md
+[demonstrate-coercing-wrapped-string]: ./pages/Demonstrate-Coercing_Types/Demonstrate-Coercing_wrapped_string.md

@@ -122,7 +122,7 @@ fn main() {
 
 _Page Last Updated: 2020-03-20_
 
-[demonstrate-coercing-types]: ./pages/Demonstrate-Coercing_Types.md
-[demonstrate-coercing-string]: ./pages/Demonstrate-Coercing_Types/Demonstrate-Coercing_string.md
-[demonstrate-coercing-struct]: ./pages/Demonstrate-Coercing_Types/Demonstrate-Coercing_struct.md
-[demonstrate-coercing-wrapped-string]: ./pages/Demonstrate-Coercing_Types/Demonstrate-Coercing_wrapped_string.md
+[demonstrate-coercing-types]: ../Demonstrate-Coercing_Types.md
+[demonstrate-coercing-string]: ./Demonstrate-Coercing_string.md
+[demonstrate-coercing-struct]: ./Demonstrate-Coercing_struct.md
+[demonstrate-coercing-wrapped-string]: ./Demonstrate-Coercing_wrapped_string.md
