@@ -16,7 +16,7 @@ impl Context {
         }
     }
 
-    fn foo(&mut self) -> &String {
+    fn foo(&mut self) -> &str {
         if self.foo.is_none() {
             let message = String::from("foo");
             self.foo = Some(message);
@@ -25,7 +25,7 @@ impl Context {
         self.foo.as_ref().unwrap()
     }
 
-    fn bar(&mut self) -> &String {
+    fn bar(&mut self) -> &str {
         if self.bar.is_none() {
             let message = String::from("bar");
             self.bar = Some(message);
@@ -53,7 +53,7 @@ fn main() {
 [Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=897a513604a9612597e9ebc5d31bd624)
 )
 
-The above code will not complie
+The above code will not compile
 ```
 error[E0499]: cannot borrow `*context` as mutable more than once at a time
   --> src/main.rs:35:15
@@ -125,11 +125,13 @@ impl ContextBuilder {
         self
     }
     
-    fn build(self) -> Context {
+    fn build_context(self) -> Context {
+        let r = self.load_foo()
+            .load_bar();
         
         Context {
-            foo: self.foo.unwrap(),
-            bar: self.bar.unwrap()
+            foo: r.foo.unwrap(),
+            bar: r.bar.unwrap()
         }
     }
 }
@@ -143,15 +145,13 @@ fn print(context: &Context) {
 
 fn main() {
     let context = ContextBuilder::new()
-        .load_foo()
-        .load_bar()
-        .build();
+        .build_context();
 
     print(&context);
 }
 ```
 (
-[Gist](https://gist.github.com/NebulaFox/897a513604a9612597e9ebc5d31bd624),
+[Gist](https://gist.github.com/NebulaFox/8222ec0676cc3ba8aefcf6d001215c65),
 [Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8222ec0676cc3ba8aefcf6d001215c65)
 )
 

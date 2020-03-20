@@ -7,7 +7,7 @@ is new to Rust but not new to programming.
 Languages such as Kotlin and Swift,
 have cultivated a certain mindset,
 which is _challenged_ in Rust,
-mostly in the form of Rust`s ownership system.
+mostly in the form of Rust's ownership system.
 
 It is assumed, the reader has read [Rust Programming Language Book](https://doc.rust-lang.org/book/)
 
@@ -36,7 +36,7 @@ impl Context {
         }
     }
 
-    fn foo(&mut self) -> &String {
+    fn foo(&mut self) -> &str {
         if self.foo.is_none() {
             let message = String::from("foo");
             self.foo = Some(message);
@@ -45,7 +45,7 @@ impl Context {
         self.foo.as_ref().unwrap()
     }
 
-    fn bar(&mut self) -> &String {
+    fn bar(&mut self) -> &str {
         if self.bar.is_none() {
             let message = String::from("bar");
             self.bar = Some(message);
