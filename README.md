@@ -19,7 +19,7 @@ It is assumed, the reader has read [Rust Programming Language Book](https://doc.
 
 ## [Challenge 1: Lazy Loading][challenge-lazy-loading]
 
-Using `Option<T>` to and `&mut self` in methods calls
+Using `Option<T>` and `&mut self` in methods calls
 to load data.
 
 ```rust
@@ -58,6 +58,23 @@ impl Context {
 
 ([Read more][challenge-lazy-loading])
 
+## [Demonstration: Coercing Types][demonstrate-coercing-types]
+
+This Demonstration is split into three parts.
+
+1. [Demonstration: Coercing with a String][demonstrate-coercing-string]
+2. [Demonstration: Coercing with a struct][demonstrate-coercing-struct]
+3. [Demonstration: Coercing a wrapped String][demonstrate-coercing-wrapped-string]
+
+Shows situations where `&String` can be coerced into `&str`
+and where it does not.
+Also how to define generic types with trait bounds
+to get around cases where it does not coerce.
+How the three traits -
+`Deref`, `Into` and `AsRef` -
+can be used and applied.
+Extra notes on how currently a trait cannot be set for all `T`.
+
 ## [Challenge 2: Contains][challenge-contains]
 
 Look at the cases when `Vec::contains` and `HashSet::contains` fail,
@@ -70,8 +87,12 @@ to work for both `Vec` and `HastSet`
 ([Read More][challenge-contains])
 
 
-_Page Last Updated: 2020-03-19_
+_Page Last Updated: 2020-03-20_
 
 
 [challenge-lazy-loading]: ./pages/Challenge-Lazy_Loading.md
 [challenge-contains]: ./pages/Challenge-Contains.md
+[demonstrate-coercing-types]: ./pages/Demonstrate-Coercing_Types.md
+[demonstrate-coercing-string]: ./pages/Demonstrate-Coercing_Type/Demonstrate-Coercing_string.md
+[demonstrate-coercing-struct]: ./pages/Demonstrate-Coercing_Type/Demonstrate-Coercing_struct.md
+[demonstrate-coercing-wrapped-string]: ./pages/Demonstrate-Coercing_Type/Demonstrate-Coercing_wrapped_string.md
