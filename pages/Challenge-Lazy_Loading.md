@@ -78,8 +78,8 @@ and got the following explanation.
 
 > The assumption that the first `&mut` is released before the second one is incorrect.
 >
-> The function: `fn foo(&mut self) -> &String` has the lifetimes elided,
-> so more fully is `fn foo<'a>(&'a mut self) -> &'a String`, so the lifetime of the `&mut`
+> The function: `fn foo(&mut self) -> &str` has the lifetimes elided,
+> so more fully is `fn foo<'a>(&'a mut self) -> &'a str`, so the lifetime of the `&mut`
 > is that of the returned String which is assigned to foo.
 >
 > Since the lifetime of foo will be until the `println!` macro,
