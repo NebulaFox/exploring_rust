@@ -15,9 +15,9 @@ How the three traits -
 can be used and applied.
 Extra notes on how currently a trait cannot be set for all `T`.
 
-_Page Last Updated: 2020-03-20_
-
 [NEXT Demonstration: Coercing with a String][demonstrate-coercing-string]
+
+_Page Last Updated: 2020-03-20_
 
 [demonstrate-coercing-types]: ./Demonstrate-Coercing_Types.md
 [demonstrate-coercing-string]: ./Demonstrate-Coercing_Types/Demonstrate-Coercing_string.md
